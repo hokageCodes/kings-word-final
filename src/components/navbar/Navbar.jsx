@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../dropdown/Dropdown';
-import Logo from '../../../assets/logo.png';
+import Logo from '/assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar() {
