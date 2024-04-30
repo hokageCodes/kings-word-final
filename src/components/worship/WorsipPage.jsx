@@ -14,7 +14,7 @@ const WorshipPage = () => {
   };
 
   return (
-    <div className="container flex mx-auto px-4 sm:px-6 lg:px-8 my-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-8">
       <div className="flex flex-col lg:flex-row lg:space-x-10 justify-center items-center">
 
         {/* Slanted Image Gallery */}
@@ -33,7 +33,7 @@ const WorshipPage = () => {
         </div>
     
         {/* Form Section */}
-        <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-6 text-center">Worship with us</h2>
             <form onSubmit={handleSubmit} className="space-y-6">

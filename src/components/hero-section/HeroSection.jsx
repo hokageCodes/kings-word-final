@@ -24,6 +24,13 @@ const HeroSection = () => {
       ctaLink: "https://www.youtube.com/@kingswordcalgary8172/streams",
       ctaText: "Worship with us",
     },
+    {
+      title: "Welcome to KingsWord Canada",
+      subtitle: "Home of the Supernatural",
+      image: "../../assets/4.png",
+      ctaLink: "https://www.youtube.com/@kingswordcalgary8172/streams",
+      ctaText: "Worship with us",
+    },
     // Add other slides similarly
   ];
 
