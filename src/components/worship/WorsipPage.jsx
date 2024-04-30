@@ -18,15 +18,14 @@ const WorshipPage = () => {
       <div className="flex flex-col lg:flex-row lg:space-x-10 justify-center items-center">
 
         {/* Slanted Image Gallery */}
-        <div className="w-full lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="w-full lg:w-1/2 grid grid-cols-2 md:grid-cols-2 gap-4">
           {['/assets/other.jpg', '/assets/worship1.png', '/assets/worship2.png', '/assets/worship3.png'].map((src, index) => (
-            <div key={index} className="col-span-1 relative h-40 md:h-56 lg:h-64" style={{
-              transform: `translateY(${index % 2 === 0 ? '5px' : '-5px'})`
-            }}>
+            <div key={index} className="col-span-1 relative h-40 md:h-56 lg:h-64">
               <img
                 src={src} // Ensure the path is correct
                 alt={`Gallery Image ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
+                style={{ transform: `translateY(${index % 2 === 0 ? '5px' : '-5px'})` }} // Consider removing if it causes layout issues
               />
             </div>
           ))}
@@ -78,9 +77,9 @@ const WorshipPage = () => {
                   required
                 >
                   <option value="">Select city</option>
-                  <option value="city_one">City One</option>
-                  <option value="city_two">City Two</option>
-                  <option value="city_three">City Three</option>
+                  <option value="city_one">Calgary</option>
+                  <option value="city_two">Toronto</option>
+                  <option value="city_three">Vancouver</option>
                 </select>
               </div>
               <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
